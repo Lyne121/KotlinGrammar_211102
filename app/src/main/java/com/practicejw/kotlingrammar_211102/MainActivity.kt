@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
             myName = "마이네임"
             myHeight = 153.5
 
+//            변수의 데이터 변경
+//            myName = "변경한 네임" // val 변수는 변경 불가능
+            myHeight = 172.9 // var 은 변경 가능. 이전 것을 덮어쓰기함
+
 //            3. 데이터 활용
             Log.d("이름", myName)
             Log.d("키", myHeight.toString()) // Log의 재료는 String만 대입 가능 => 변수를 쓸 때 자료형을 신경써야함
