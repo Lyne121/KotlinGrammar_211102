@@ -45,5 +45,29 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("나이", myKoreanAge.toString())
         }
+
+        btnCondition01.setOnClickListener {
+
+            val myAge = 15
+
+            if ( myAge >= 20 ) {
+
+//                질문 내용이 맞으면 실행될 코드
+                Log.d("나이 검사" , "성인입니다" )
+
+            }
+
+            else if ( myAge >= 17 ) {
+                Log.d("나이 검사" , "고등학생입니다")
+            }
+
+            else if ( myAge >= 14 ) {
+                Log.d("나이 검사", "중학생입니다")
+            }
+
+            else {
+                Log.d("나이 검사", "초등학생 이하 입니다")
+            }
+        }
     }
 }
