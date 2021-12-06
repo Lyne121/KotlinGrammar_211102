@@ -32,5 +32,18 @@ class MainActivity : AppCompatActivity() {
 //            참고 - 모든 변수는 '참조형 변수' 이며, 부가 기능들이 있다
 //              공통 기능 : String으로 변환 가능 => toString()
         }
+
+        btnVariable02.setOnClickListener {
+//            변수를 만들고 > 바로 데이터 대입
+//            보통은 val로 만든다
+            val myBirthYear = 1993 // 대입한 값의 형태가 정수(Int). 즉, 대입할 때 자동으로 Int로 결정된다.
+
+            Log.d("출생연도", myBirthYear.toString())
+
+//            2021년 나이는 몇 살?
+            val myKoreanAge = 2021 - myBirthYear + 1 //변수를 대입할 때, 기능 실행(ex.계산식)의 결과를 바로 대입 가능
+
+            Log.d("나이", myKoreanAge.toString())
+        }
     }
 }
