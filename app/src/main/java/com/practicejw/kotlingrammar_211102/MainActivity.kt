@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("이름", myName)
             Log.d("키", myHeight.toString()) // Log의 재료는 String만 대입 가능 => 변수를 쓸 때 자료형을 신경써야함
 
-//            참고 - 모든 변수는 '참조형 변수'이며, 부가 기능들이 있다
+//            참고 - 모든 변수는 '참조형 변수' 이며, 부가 기능들이 있다
 //              공통 기능 : String으로 변환 가능 => toString()
         }
     }
