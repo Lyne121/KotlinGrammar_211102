@@ -67,7 +67,63 @@ class MainActivity : AppCompatActivity() {
 
             else {
                 Log.d("나이 검사", "초등학생 이하 입니다")
+
             }
         }
+
+        btnCondition02.setOnClickListener {
+
+//            장기 근속의 3대 요소 1. 연봉 2. 통근 거리 3. 워라밸
+
+            val aCompanySalary = 5800
+            val aCompanyMinute = 5.8
+            val aCompanyWLB = true
+
+//            Q . 지원자들은 A 회사에 취업할까?
+//            1번 지원자는 연봉만 5천 이상이면 OK
+
+            if ( aCompanySalary >= 5000 ) {
+                Log.d("1번 지원자","취업 OK")
+            }
+            else {
+                Log.d("1번 지원자", "다른 회사")
+            }
+            
+//            2번 지원자는 출퇴근이 10분 이내면 OK
+            if ( aCompanyMinute <= 10 ) {
+                Log.d("2번 지원자","취업 OK")
+            }
+            else {
+                Log.d("2번 지원자", "다른 회사")
+            }
+            
+//            3번 지원자는 워라밸 좋으면 OK   - 굳이 ==true 적을 필요 없다
+            if ( aCompanyWLB ) {
+                Log.d("3번 지원자", "취업 OK")
+            }
+            else {
+                Log.d("3번 지원자", "다른 회사")
+            }
+
+//            4번 지원자는 연봉이 4천 이상, 거리도 10분 이내
+            if ( aCompanySalary >= 4000 && aCompanyMinute <= 10 ) {
+                Log.d("4번 지원자", "취업 OK")
+            }
+            else {
+                Log.d("4번 지원자", "다른 회사")
+            }
+
+//            5번 지원자는 거리가 20분 이내거나, 칼퇴하거나
+            if ( aCompanyMinute <= 20 || aCompanyWLB ) {
+                Log.d("5번 지원자", "취업 OK")
+            }
+            else {
+                Log.d("5번 지원자", "다른 회사")
+            }
+
+
+
+        }
+
     }
 }
